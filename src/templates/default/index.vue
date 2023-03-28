@@ -1,15 +1,16 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './hello-world.vue'
+import Logo from './logo.svg?url'
 
 const { t } = useI18n()
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <img alt="Vue logo" class="logo" :src='Logo' width="128" height="128" />
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
@@ -21,7 +22,7 @@ const { t } = useI18n()
     </div>
   </header>
 
-  <RouterView />
+  <slot />
 </template>
 
 <style scoped>
@@ -37,7 +38,8 @@ header {
 
 nav {
   width: 100%;
-  font-size: 12px;
+  --font-size: 16px;
+  font-size: var(--font-size);
   text-align: center;
   margin-top: 2rem;
 }
