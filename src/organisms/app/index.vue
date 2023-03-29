@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import DefaultTemplate from '../../templates/default/index.vue'
+import DefaultTemplate from '@/templates/default/index.vue'
 </script>
 
 <template>

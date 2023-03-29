@@ -1,15 +1,20 @@
-<template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
-</template>
+<script lang="ts" setup>
+import { useI18n } from 'vue-i18n'
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
+const { t } = useI18n()
+const features = [
+  'i18n',
+  'Pinia',
+  'PostCSS (incl. nesting CSS)',
+  'Vuetify'
+]
+</script>
+
+<template>
+  <v-card class="mx-auto text-left" max-width="640" min-width="320">
+    <v-toolbar color="teal">
+      <v-toolbar-title>{{ $t('pages.about.featuresInclude') }}</v-toolbar-title>
+    </v-toolbar>
+    <v-list :items='features'></v-list>
+  </v-card>
+</template>

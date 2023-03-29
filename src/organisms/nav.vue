@@ -7,46 +7,20 @@ const { t } = useI18n()
 
 <template>
   <nav>
-    <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/about">{{ $t('about') }}</RouterLink>
+    <RouterLink to="/">{{ $t('organisms.nav.home') }}</RouterLink> |
+    <RouterLink to="/about">{{ $t('organisms.nav.about') }}</RouterLink>
   </nav>
 </template>
 
 <style scoped>
 nav {
-  width: 100%;
-  --font-size: 16px;
-  font-size: var(--font-size);
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
+  padding: 30px;
+  > a {
+    font-weight: bold;
+    color: #2c3e50;
+    &.router-link-exact-active {
+     color: #42b983;
+    }
   }
 }
 </style>

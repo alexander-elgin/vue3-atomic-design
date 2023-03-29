@@ -1,3 +1,13 @@
 {
-  "about": "О проекте"
+  "organisms.nav.about": "О проекте",
+  "organisms.nav.home": "Главная",
+  "pages.home.activity.confirmRemoval": "Подтвердите удаление",
+  "pages.home.addActivityForm.activity": "Дело",
+  "pages.home.addActivityForm.whatToDo": "Что сделать",
+  "pages.home.toDoList": "Список дел",
+  "shared.ok": "Да",
+  "shared.cancel": "Отмена",
+  "shared.remove": "Удалить",
+  "pages.about.featuresInclude": "Шаблон включает в себя",
+  "templates.default.logo": "Лого"
 }
