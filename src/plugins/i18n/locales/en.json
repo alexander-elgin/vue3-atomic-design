@@ -1,6 +1,7 @@
 {
   "organisms.nav.about": "About",
   "organisms.nav.home": "Home",
+  "organisms.pageTemplate.logo": "Logo",
   "pages.about.featuresInclude": "The template features include",
   "pages.home.activity.confirmRemoval": "Confirm Removal",
   "pages.home.addActivityForm.activity": "Activity",
@@ -8,6 +9,5 @@
   "pages.home.toDoList": "Todo List",
   "shared.ok": "OK",
   "shared.cancel": "Cancel",
-  "shared.remove": "Remove",
-  "templates.default.logo": "Logo"
+  "shared.remove": "Remove"
 }

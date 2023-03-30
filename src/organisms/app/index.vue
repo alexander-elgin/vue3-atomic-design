@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import DefaultTemplate from '@/templates/default/index.vue'
+import PageTemplate from '@/organisms/page-template/index.vue'
 </script>
 
 <template>
-  <DefaultTemplate>
+  <PageTemplate>
     <RouterView />
-  </DefaultTemplate>
+  </PageTemplate>
 </template>
 
 <style>

@@ -1,6 +1,7 @@
 {
   "organisms.nav.about": "О проекте",
   "organisms.nav.home": "Главная",
+  "organisms.pageTemplate.logo": "Лого",
   "pages.home.activity.confirmRemoval": "Подтвердите удаление",
   "pages.home.addActivityForm.activity": "Дело",
   "pages.home.addActivityForm.whatToDo": "Что сделать",
@@ -8,6 +9,5 @@
   "shared.ok": "Да",
   "shared.cancel": "Отмена",
   "shared.remove": "Удалить",
-  "pages.about.featuresInclude": "Шаблон включает в себя",
-  "templates.default.logo": "Лого"
+  "pages.about.featuresInclude": "Шаблон включает в себя"
 }

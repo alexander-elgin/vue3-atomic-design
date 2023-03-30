@@ -12,7 +12,7 @@ const logoSize = 128
 <template>
   <Nav />
   <div>
-    <img :alt="$t('templates.default.logo')" :src="logoUrl" :width="logoSize" :height="logoSize" />
+    <img :alt="$t('organisms.pageTemplate.logo')" :src="logoUrl" :width="logoSize" :height="logoSize" />
   </div>
   <slot />
 </template>
