@@ -13,4 +13,14 @@ export default createVuetify({
     aliases,
     sets: { fa }
   },
+  theme: {
+    themes: {
+      light: {
+        dark: false,
+        colors: {
+          teal: '#42b983'
+        },
+      },
+    },
+  },
 })
