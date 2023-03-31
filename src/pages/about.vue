@@ -6,6 +6,7 @@ const features = [
   'i18n',
   'Pinia',
   'PostCSS (incl. nesting CSS)',
+  'Vuelidate',
   'Vuetify'
 ]
 </script>
