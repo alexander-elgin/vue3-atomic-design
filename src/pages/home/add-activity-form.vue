@@ -1,16 +1,14 @@
 <template>
   <v-form ref="form">
     <v-text-field
-      v-model="newActivityTitle"
-      v-validate="'alpha_spaces|min:3|required'"
-      name="newActivityTitle"
-      :data-vv-as="$t('pages.home.addActivityForm.activity')"
-      color="teal"
-      :label="`${$t('pages.home.addActivityForm.whatToDo')}?`"
-      @keydown.enter.prevent="add"
-      ref="field"
       append-icon="fas fa-paper-plane"
       @click:append="add"
+      color="teal"
+      @keydown.enter.prevent="add"
+      :label="`${$t('pages.home.addActivityForm.whatToDo')}?`"
+      name="newActivityTitle"
+      v-model="newActivityTitle"
+      v-validate="'alpha_spaces|min:3|required'"
     />
   </v-form>
 </template>
@@ -31,9 +29,3 @@ const add = () => {
   newActivityTitle.value = ''
 };
 </script>
-
-<style scoped>
-.done {
-  text-decoration: line-through;
-}
-</style>
