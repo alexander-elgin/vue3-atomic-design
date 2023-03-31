@@ -6,7 +6,7 @@
     <v-card-text>
       <AddActivityForm />
       <v-list>
-        <Activity v-for="(activity, index) in activities" :key="index" :activity="activity" />
+        <Activity v-for="activity in activities" :key="activity.title" :activity="activity" />
       </v-list>
     </v-card-text>
   </v-card>

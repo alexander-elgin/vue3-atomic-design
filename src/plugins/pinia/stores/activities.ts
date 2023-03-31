@@ -15,7 +15,7 @@ export default defineStore('activities', {
     add(title: string) {
       this.activities.push({ title, done: false })
     },
-    remove({ activity }: { activity: Activity }) {
+    remove(activity: Activity) {
       this.activities.splice(this.activities.indexOf(activity), 1)
     },
     toggle({ activity, done }: { activity: Activity, done: boolean } ) {
